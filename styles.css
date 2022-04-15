@@ -219,7 +219,7 @@ p{
   font-weight: bold;
 }
 
-.para1{
+.para1, .para2{
   color: black;
   font-family: 'Mulish', sans-serif;
   font-size: 20px;
@@ -236,4 +236,123 @@ p{
   margin-left: 10px;
   float: right;
   margin-right: 40px;
+}
+
+/* MTT Page */
+
+
+/* Events Page */
+.header3{
+  font-family: 'Mulish', sans-serif;
+  text-align: center;
+  font-size: 45px;
+  color: black;
+  font-weight: bold;
+}
+
+.calendar{
+  margin-left: 330px;
+  margin-top: 30px;
+}
+
+.header4{
+  font-family: 'Mulish', sans-serif;
+  text-align: center;
+  font-size: 45px;
+  color: black;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.header5{
+  color: black;
+  font-family: 'Mulish', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 175px;
+  margin-top: 100px;
+  display: inline;
+}
+
+/* Previous Event Images */
+.tech-img{
+  width: 515px;
+  height: 350px;
+  margin-left: 05px;
+}
+
+.para3{
+  color: black;
+  font-family: 'Mulish', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-right: 695px;
+  margin-left: -210px;
+}
+
+.workshop-img{
+  width: 350px;
+  height: 350px;
+  margin-left: 95px;
+}
+
+.game-night-img{
+  width: 350px;
+  height: 350px;
+  margin-left: 130px;
+}
+
+.header6{
+  color: black;
+  font-family: 'Mulish', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 255px;
+  display: inline;
+}
+
+.header7{
+  color: black;
+  font-family: 'Mulish', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 1085px;
+}
+
+.para4{
+  color: black;
+  font-family: 'Mulish', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-right: 200px;
+  margin-left: 300px;
+}
+
+.para5{
+  color: black;
+  font-family: 'Mulish', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-right: -200px;
+  margin-left: 850px;
+}
+
+.title-container{
+  margin-top: 25px;
+}
+
+.image-container{
+  margin-top: 25px;
+}
+
+.description-container{
+  display: inline-flex;
+}
+
+.column p{
+  flex: 20%;
+  padding: 10px;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: -10px;
 }
