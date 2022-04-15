@@ -28,14 +28,14 @@ body, html{
     position: relative;
     min-width: 500px;
     animation-duration: 3s;
-    animation-name: slidein;
+    animation-name: fade-in, bounce2;
    
 }
 .join-buttons{
   padding-left: 20px;
   min-width: 500px;
   animation-duration: 3s;
-  animation-name: slidein;
+  animation-name: fade-in, bounce2;
 
   
 }
@@ -138,7 +138,24 @@ body, html{
   font-weight: 700;
 }
 
-@keyframes slidein {
+@keyframes fade-in {
+  from { 
+    opacity: 0; 
+  }
+
+  to {
+    opacity: 1; 
+  }
+}
+
+@keyframes bounce2 {
+	10%, 30%, 50%, 80%, 100% {
+    transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
+
+/* @keyframes slidein {
   from {
     margin-top: 100%;
     width: 300%;
@@ -148,7 +165,7 @@ body, html{
     margin-left: 0%;
     width: 100%;
   }
-}
+} */
 
 /* Body Image*/
 .Lady-img{
