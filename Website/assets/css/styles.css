@@ -71,6 +71,7 @@ ul.navbar-nav {
   font-weight: bold;
   text-align: left;
   float: left;
+  max-width: 370px;
 }
 
 .logo-img{
@@ -79,7 +80,6 @@ ul.navbar-nav {
 	margin-left: 10px;
   margin-right: 10px;
 	float: left;
-	
   }
   
   .navbar-brand:hover{
@@ -88,7 +88,7 @@ ul.navbar-nav {
   
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand { margin-left: 0; }
 
-@media (max-width: 600px) {
+@media (max-width: 370px) {
 	
 	.navbar.navbar-no-bg { background: #e8c9d4; }
 	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand { margin-left: 20px; }
@@ -105,6 +105,7 @@ ul.navbar-nav {
   font-size: 20px;
   font-weight: bold;
   text-align: left;
+  float: left;
 
 
     }
@@ -157,7 +158,6 @@ ul.navbar-nav {
   margin-top: 20px;
   float: right;
   width: 550px;
-  
 }
 /* Social Media Buttons */
 
@@ -198,6 +198,7 @@ ul.navbar-nav {
 }
 
 /* About Page */
+
 .header2{
   font-family: 'Mulish', sans-serif;
   text-align: center;
@@ -211,30 +212,38 @@ p{
   font-family: 'Mulish', sans-serif;
   font-size: 20px;
   text-align: left;
+  padding-bottom: 10px;
   font-weight: 300;
-  padding-top: 35px;
+  min-width: 300px
 }
 
 .bolded{
   font-weight: bold;
 }
 
-.para1, .para2{
+.para1{
   color: black;
   font-family: 'Mulish', sans-serif;
   font-size: 20px;
   text-align: center;
   font-weight: 300;
-  padding-left: 250px;
-  padding-right: 250px;
   padding-top: 35px;
+  min-width: 300px
+}
+
+
+.para2{
+  color: black;
+  font-family: 'Mulish', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 300;
+  min-width: 300px
 }
 
 .laptop-icon{
   height: 245px;
   width: 330px;
-  margin-right: 40%;
-  margin-left: 40%;
 }
 
 /* MTT Page */
@@ -247,6 +256,7 @@ p{
   font-size: 45px;
   color: black;
   font-weight: bold;
+  padding-bottom: 20px;
 }
 
 .calendar{
