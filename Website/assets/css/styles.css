@@ -9,33 +9,35 @@ body, html{
   overflow-x: hidden;
 }
 
-@media (min-width: 200px) {
+@media (min-width: 600px) {
 .page-container, .about-container, .MTT-container, .events-container, .resources-container, .partners-container, .contact-container{
 	background-color: white;
 	color: white;
 	scroll-behavior:auto;
 	font-style: normal;
-	padding-top: 20px;
-    padding-bottom: 40px;
     margin-left: 20px;
     margin-right: 20px;
+    max-width: 1275px;
 }
 .join-button-container{
  
 	padding-top: 20px;
     padding-bottom: 40px;
-    padding-left: 20px;
+    padding-left: 50px;
     position: relative;
     min-width: 500px;
     animation-duration: 3s;
     animation-name: fade-in, bounce2;
+    float: left;
    
 }
 .join-buttons{
-  padding-left: 20px;
+  padding-top: 40px;
+  padding-left: 50px;
   min-width: 500px;
   animation-duration: 3s;
   animation-name: fade-in, bounce2;
+  float: left;
 
   
 }
@@ -44,97 +46,78 @@ body, html{
 
 /* Navigation */
 .navbar {
-  position: fixed;
-  width: 100%;
-  background-color: #e8c9d4;
-  
+	background: #e8c9d4;
+	border: 0;
+	-moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;
+	-o-transition: all .6s; -moz-transition: all .6s; -webkit-transition: all .6s; -ms-transition: all .6s; transition: all .6s;
 }
 
+ul.navbar-nav {
+	font-family: 'League Spartan', sans-serif;
+	font-size: 14px;
+	color: #fff;
+	font-weight: 400;
+  margin-top: 5px;
+}
+
+.navbar-inverse ul.navbar-nav li a { padding-top: 10px; padding-bottom: 10px; color: black; border: 0; }
+.navbar-inverse ul.navbar-nav li a:hover { color: #db868e; border: 0; }
+.navbar-inverse ul.navbar-nav li a:focus { color: #6fb39b; outline: 0; border: 0; }
+
 .navbar-brand {
-  font-family: 'League Spartan', sans-serif;
+	font-family: 'League Spartan', sans-serif;
   color: black;
   font-size: 20px;
   font-weight: bold;
   text-align: left;
+  float: left;
 }
 
 .logo-img{
-  height: 55px;
-  margin-right: 20px;
-}
+	margin-top: 5px;
+	height: 35px;
+	margin-left: 10px;
+  margin-right: 10px;
+	float: left;
+	
+  }
+  
+  .navbar-brand:hover{
+	color: #6fb39b;
+  }
+  
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand { margin-left: 0; }
 
-.navbar-brand:hover{
-  color: white;
-}
+@media (max-width: 600px) {
+	
+	.navbar.navbar-no-bg { background: #e8c9d4; }
+	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand { margin-left: 20px; }
+	.navbar-collapse { border: 0; }
+	.navbar-inverse .navbar-toggle { margin-top: 10px; border-color: transparent; }
+	.navbar-inverse ul.navbar-nav li a { padding-top: 10px; padding-bottom: 10px; }
+	.navbar-inverse ul.navbar-nav li a:hover, .navbar-inverse ul.navbar-nav li a:focus { border: 0; }
 
-.nav-item {
-  list-style: none;
-
-}
-
-.nav-link {
-
+	
+	/* logo */
+    .navbar-brand {
+    	font-family: 'League Spartan', sans-serif;
   color: black;
-  font-family: 'League Spartan', sans-serif;
-  font-weight: bold;
   font-size: 20px;
-  
-}
-
-.nav-link:hover {
-  color: white;
-  background-color: #db868e; /* collapse item hover*/
-}
-
-.navbar-toggler {
-  border: 1px solid black;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.navbar-toggler-icon {
-  width:1.5rem;
-  padding-top: 5px;
-}
+  font-weight: bold;
+  text-align: left;
 
 
-@media (min-width: 768px) {
-.navbar-expand-md .navbar-nav .nav-link {
-  padding-right: 30px;
-  padding-left: 30px;
-}
-}
-
-
-@media (max-width: 767px) {
-
-.navbar-nav {
-  text-align: right;
-  
-}
-
-.navbar-collapse {
-  background-color: #e8c9d4; /* collapse background color*/
-  padding: 10px;
-  border-radius: 3px;
-}
-
-.navbar-collapse .nav-link { 
-  color: black; /* nav text color*/
-  padding-right: 20px;
-  
-}
-}
+    }
+  }
 
 /* Body Title */
 .header1{
   font-family: 'Mulish', sans-serif;
   text-align: left;
-  font-size: 75px;
+  font-size: 70px;
   color: #6fb39b;
   padding-left: 50px;
   padding-right: 20px;
-  padding-top: 35px;
   font-weight: 700;
 }
 
@@ -169,17 +152,19 @@ body, html{
 
 /* Body Image*/
 .Lady-img{
-  margin-bottom: 500px;
-  margin-right: 35px;
+  margin-bottom: 20px;
+  margin-right: 100px;
   margin-top: 20px;
   float: right;
   width: 550px;
+  
 }
 /* Social Media Buttons */
 
 .row{
-  padding-left: 115px;
-  padding-top: 80px;
+  padding-left: 50px;
+  padding-top: 20px;
+
 }
 .button{
   background-color: #dbd2ea;
@@ -227,8 +212,6 @@ p{
   font-size: 20px;
   text-align: left;
   font-weight: 300;
-  padding-left: 250px;
-  padding-right: 250px;
   padding-top: 35px;
 }
 
@@ -250,9 +233,8 @@ p{
 .laptop-icon{
   height: 245px;
   width: 330px;
-  margin-left: 10px;
-  float: right;
-  margin-right: 40px;
+  margin-right: 40%;
+  margin-left: 40%;
 }
 
 /* MTT Page */
@@ -268,8 +250,7 @@ p{
 }
 
 .calendar{
-  margin-left: 330px;
-  margin-top: 30px;
+  width: 100%;
 }
 
 .header4{
@@ -286,16 +267,18 @@ p{
   font-family: 'Mulish', sans-serif;
   font-size: 20px;
   font-weight: bold;
-  margin-left: 175px;
   margin-top: 100px;
   display: inline;
+   width: 33.33333333;
+  
 }
+
+
 
 /* Previous Event Images */
 .tech-img{
-  width: 515px;
-  height: 350px;
-  margin-left: 05px;
+  width: 33.33333333;
+  height: 200px;
 }
 
 .para3{
@@ -303,20 +286,18 @@ p{
   font-family: 'Mulish', sans-serif;
   font-size: 20px;
   text-align: center;
-  margin-right: 695px;
-  margin-left: -210px;
 }
 
 .workshop-img{
-  width: 350px;
-  height: 350px;
-  margin-left: 95px;
+  width: 33.33333333;
+  height: 200px;
+  
 }
 
 .game-night-img{
-  width: 350px;
-  height: 350px;
-  margin-left: 130px;
+  width: 33.33333333;
+  height: 200px;
+
 }
 
 .header6{
@@ -324,8 +305,8 @@ p{
   font-family: 'Mulish', sans-serif;
   font-size: 20px;
   font-weight: bold;
-  margin-left: 255px;
   display: inline;
+  width: 33.33333333;
 }
 
 .header7{
@@ -333,7 +314,7 @@ p{
   font-family: 'Mulish', sans-serif;
   font-size: 20px;
   font-weight: bold;
-  margin-left: 1085px;
+  width: 33.33333333;
 }
 
 .para4{
@@ -341,8 +322,7 @@ p{
   font-family: 'Mulish', sans-serif;
   font-size: 20px;
   text-align: center;
-  margin-right: 200px;
-  margin-left: 300px;
+
 }
 
 .para5{
@@ -350,8 +330,7 @@ p{
   font-family: 'Mulish', sans-serif;
   font-size: 20px;
   text-align: center;
-  margin-right: -200px;
-  margin-left: 850px;
+ 
 }
 
 .title-container{
@@ -366,10 +345,4 @@ p{
   display: inline-flex;
 }
 
-.column p{
-  flex: 20%;
-  padding: 10px;
-  text-align: center;
-  margin-left: 10px;
-  margin-right: -10px;
-}
+
