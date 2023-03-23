@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
 
     <link rel="stylesheet" href="Website/assets/css/styles.css">
     <link rel="stylesheet" href="Website/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="Website/assets/css/all.min.css" />
     <link rel="icon" href="favicon.ico">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,90 +15,79 @@
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600&family=Mulish:wght@300;700&family=Roboto+Mono&display=swap" rel="stylesheet">
     
     <title>Events</title>
-
 </head>
 <body>
    <!-- Top Navigation Menu -->
-   <nav class="navbar navbar-inverse" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
-          <span class="sr-only"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+   <nav class="navbar navbar-expand-md" id="Nav">              
+        <a href="index.html">
+        <img src="Website/assets/images/lwicslogo.png"  href="index.html" class="logo-img"> </a>
+            <a href="index.html" class="navbar-brand">LAURIER WOMEN IN COMPUTER SCIENCE</a>
+          
+    
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="Website/assets/images/menu.png" class="navbar-toggler-icon"> </a>
         </button>
-        <img src="Website/assets/images/Logo Transparent Bg.png" href="index.html" class="logo-img"> </a>
-        <a class="navbar-brand" href="index.html">LAURIER WOMEN IN COMPUTER SCIENCE</a>
-      </div>
-      <div class="collapse navbar-collapse" id="top-navbar-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="MTT.html">Meet The Team</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="resources.html">Resources</a></li>
-          <li><a href="partners.html">Partners</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-      
-      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link" href="MTT.html">Meet The Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link" href="events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link" href="resources.html">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link" href="partners.html">Partners</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link" href="contact.html">Contact Us</a>
+                </li>    
+            </ul>
+        </div>        
+    </nav>
 
     <div class="events-container">
         <h1 class= "header2">Events</h1>
         <p class="para2">Come out to one of our LWiCS events for the opportunity to learn more about a career in tech, network with women in the computer science program or field, or receive resources to assist in your academic or career development.</p>
         <h1 class="header3">UPCOMING EVENTS</h1>
-        <iframe class="calendar" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23e8c9d4&ctz=America%2FToronto&showTitle=0&showNav=1&showPrint=0&showTabs=1&src=bGF1cmllcndpY3NAZ21haWwuY29t&color=%23039BE5" style="border:solid 5px black" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-        
+        <!-- <iframe class="calendar" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23e8c9d4&ctz=America%2FToronto&showTitle=0&showNav=1&showPrint=0&showTabs=1&src=bGF1cmllcndpY3NAZ21haWwuY29t&color=%23039BE5" style="border:solid 5px black" width="800" height="600" frameborder="0" scrolling="no"></iframe> -->
+        <iframe class="calendar" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23B39DDB&ctz=America%2FToronto&showTitle=0&src=bGF1cmllcndpY3NAZ21haWwuY29t&color=%23C0CA33" style="border:solid 5px black" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
         <h1 class="header4">PREVIOUS EVENTS</h1>
-        <div class="row">
         <div class="image-container">
-            <div class="col-sm-4">
-                <img class="tech-img" src="Website/assets/images/WomenInTechPanel.png" alt="tech-panel">
-            </div>
-        
-            <div class="col-sm-4">
-                <img class="workshop-img" src="Website/assets/images/workshop.jpg" alt="workshop">
-            </div>
-        
-            <div class="col-sm-4">
-                <img class="game-night-img" src="Website/assets/images/game-night.jpg" alt="community-building">
-            </div>
+            <img class="mg-img" src="Website/assets/images/Meet & Greet Official.png" alt="meet-greet">
+            <img class="game-night-img" src="Website/assets/images/Discord Game Night Official.png" alt="discord-gn">
+            <img class="trivia-night-img" src="Website/assets/images/Trivia Night Official.png" alt="trivia-night">
         </div>
-    </div>
-    <div class="row">
+
         <div class="title-container">
-            <div class="para3 col-sm-4">
-            <h3 class="header5">Women in Tech Panels</h3>
+            <h3 class="header5">Meet & Greet</h3>
+            <h3 class="header6">Discord Game Night</h3>
+            <h3 class="header7">Trivia Night</h3>
         </div>
-            <div class="para4 col-sm-4">
-            <h3 class="header6">Career & Mentorship Workshops</h3>
-        </div>
-            <div class="para5 col-sm-4">
-            <h3 class="header5">Community Building Events</h3>
-        </div>
-        </div>
-    </div>
-    <div class="row">
+        
        <div class="description-container">
-            <div class="col-sm-4">
-                <p>These career panels give an opportunity for students to interact with professionals from a variety of tech companies and learn about what it takes to prepare and be successful in the field. Some of the panels we've had in the past are our Tech Recruiter Panel, UX Professional Panel, Women in Data Science Panel, and many more.</p>
+            <div class="column">
+                <!-- <p>These career panels create an opportunity for students to interact with professionals from a variety of tech companies, learn about what it takes to prepare for tech related jobs, and learn about what it takes to be successful in the field. Past panels we've had are Tech Recruiter Panel, UX Professional Panel, Women in Data Science Panel, and many more.</p> -->
             </div>
 
-            <div class="col-sm-4">
-                <p>These workshops are aimed at providing tips on writing a resume, pitching yourself in an interview, and personal branding. We have held some events in the past where tech recruiters worked with students individually to review their resumes and answer any career related questions they had. We have also held events where tech professionals answer student's career questions and provide tips and advice about working in the tech industry.</p>
+            <div class="column">
+                <!-- <p>These workshops are aims at providing tips on writing a resume, pitching yourself in an interview, and personal branding. We have held some events in the past where tech recruiters worked with students individually to review their resumes and answer any career related questions they had. We have also held events where tech professionals answer student's career questions and provide tips and advice about working in the tech industry.</p> -->
             </div>
 
-            <div class="col-sm-4">
-                <p>These events are aimed at fostering a safe, inclusive and diverse space. These events create the opportunity for computer science students to meet new people, promote gender equity, and build community. Past events have included beginning of term socials, game nights, and study sessions.</p>
+            <div class="column">
+                <!-- <p>These events are aimed at fostering a safe, inclusive and diverse space. These events create the opportunity for computer science students to meet new people, promote gender equity, and build community. Past events have included beginning of term socials, game nights, and study sessions.</p> -->
             </div>
         </div>
+        
     </div>
-    </div>
-    <script src="Website/assets/js/jquery-1.11.1.min.js"></script>     
-    <script src="Website/assets/js/bootstrap.min.js"></script> 
 </body>
 </html>
